@@ -1,0 +1,142 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.containerA {
+    flex: auto;
+}
+.containerB{
+    flex: auto;
+}
+.header{
+    margin: 10px;
+    
+}
+.page{
+    padding: 0px;
+}
+
+h3{
+    display:inline-block;
+    margin: 10px;
+    color: dodgerblue;
+}
+form {
+    margin-left: 10px;
+}
+button{
+    margin-top:10px;
+    margin-left: 10px;
+    padding: 3px 25px 3px 3px
+}
+button:focus{
+    background: deepskyblue;
+}
+table{
+    margin-top: 10px;
+    margin-left: 30px;
+    border-collapse: collapse;
+}
+td,th {
+    border: 2px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+}
+.vreme{
+    display: inline-block;
+    margin-left: 50px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+    color: green;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5px;
+}
+#ime{
+    width: 250px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+    height: 30px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+#medium, #easy, #hard, #expert{
+    margin: 5px;
+}
+.pointerEvent {
+    pointer-events: none;
+}
+.pointerEventFliped {
+    margin: auto;
+    border-radius: 5px;
+    width: 80px;
+    height: 80px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    pointer-events: none;
+    transform: rotateY(180deg);
+}
+.scene {
+    
+    visibility: hidden;
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid dodgerblue;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    margin: auto;
+    border-radius: 5px;
+    width: 80px;
+    height: 80px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+.card.is-flipped {
+    transform: rotateY(180deg);
+}
+.slika {
+    border-radius: 5px;
+    width: 80px;
+    height: 80px;
+}
+.card__face {
+    border-radius: 5px;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.card__face--front {
+    border-radius: 5px;
+    background: red;
+}
+.card__face--back {
+    background: blue;
+    transform: rotateY(180deg);
+}
+
+@media only screen and (min-width: 850px) {
+    .masterPage{
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
