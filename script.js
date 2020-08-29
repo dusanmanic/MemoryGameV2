@@ -507,8 +507,8 @@ btnRadio.forEach(izaberiNivo => {
         /// Nivo Expert ///
         if(izaberiNivo.id == "expert") {
             
-            document.querySelector(".containerA").className = "col-9"
-            document.querySelector(".containerB").className = "col-3"
+            document.querySelector("#containerA").className = "col-9"
+            document.querySelector("#containerB").className = "col-3"
             startCounter(1)
             dugmeExpert()
             
