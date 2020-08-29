@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="masterPage">
-        <div class="containerA">
+    <div id="masterPage">
+        <div id="containerA" class="col-6">
             <div class="header">
                 <h3>Igra memorije</h3>
                 <div class="vreme">0</div>
@@ -21,10 +21,8 @@
                 <input type="radio" name="level" id="hard">Teško
                 <input type="radio" name="level" id="expert">Expert
             </form>
-            
-
             <div class="page">
-                <div class="cardConteiner">
+                <div class="cardContainer">
                     <div class="scene">
                         <!--<div class="card">
                             <div class="card__face card__face--front">front</div>
@@ -36,7 +34,7 @@
             <p></p>
         </div>
 
-        <div class="containerB">
+        <div id="containerB" class="col-6">
             <div>
                 <button id="lako" onclick="dugmeLako()" checked>Lako</button>
                 <button id="srednje" onclick="dugmeSrednje()">Srednje</button>

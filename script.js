@@ -80,8 +80,11 @@ btnRadio.forEach(izaberiNivo => {
         /// Nivo Easy ///
         if(izaberiNivo.id == "easy") {
             
+            document.querySelector("#containerA").className = "col-6"
+            document.querySelector("#containerB").className = "col-6"
             startCounter(1)
             dugmeLako()
+            
 
             imgEasy.forEach(x => {
                 let cardHolder = document.createElement("div");
@@ -220,6 +223,8 @@ btnRadio.forEach(izaberiNivo => {
         /// Nivo Medium ///
         if(izaberiNivo.id == "medium") {
             
+            document.querySelector("#containerA").className = "col-7"
+            document.querySelector("#containerB").className = "col-5"
             startCounter(1)
             dugmeSrednje()
             
@@ -359,6 +364,8 @@ btnRadio.forEach(izaberiNivo => {
         /// Nivo Hard ///
         if(izaberiNivo.id == "hard") {
             
+            document.querySelector("#containerA").className = "col-8"
+            document.querySelector("#containerB").className = "col-4"
             startCounter(1)
             dugmeTesko()
             
@@ -500,6 +507,8 @@ btnRadio.forEach(izaberiNivo => {
         /// Nivo Expert ///
         if(izaberiNivo.id == "expert") {
             
+            document.querySelector(".containerA").className = "col-9"
+            document.querySelector(".containerB").className = "col-3"
             startCounter(1)
             dugmeExpert()
             
@@ -697,8 +706,6 @@ function startCounter(seconds) {
     brojacZaVreme = 0;
     console.log(`brojacZaVreme ${brojacZaVreme}`)
 }
-
-//////////////////////////
 
 let imeCounter = 0;
 let player = {};

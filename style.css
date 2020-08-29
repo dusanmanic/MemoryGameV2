@@ -5,15 +5,14 @@
     padding: 0;
 }
 
-.containerA {
+#containerA {
     flex: auto;
 }
-.containerB{
+#containerB{
     flex: auto;
 }
 .header{
-    margin: 10px;
-    
+    margin: 10px;   
 }
 .page{
     padding: 0px;
@@ -85,7 +84,6 @@ td,th {
     transform: rotateY(180deg);
 }
 .scene {
-    
     visibility: hidden;
     display: inline-block;
     margin: 10px;
@@ -132,11 +130,58 @@ td,th {
     background: blue;
     transform: rotateY(180deg);
 }
-
+/*
 @media only screen and (min-width: 850px) {
     .masterPage{
         display: flex;
         flex-direction: row;
     }
     
+}
+*/
+/*Za mobilne telefone*/
+[class*="col-"]{
+    width: 100%;
+}
+@media only screen and (min-width: 800px){
+    [class*="col-"]{
+        float: left;
+    }
+    .col-6{
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 1000px){
+    [class*="col-"]{
+        float: left;
+    }
+    .col-5{
+        width: 41.66%;
+    }
+    .col-7{
+        width: 58.33%;
+    }  
+}
+@media only screen and (min-width: 1100px){
+    [class*="col-"]{
+        float: left;
+    }
+    .col-4{
+        width: 33.33%;
+    }
+    .col-8{
+        width: 66.66%;
+    }
+    
+}
+@media only screen and (min-width: 1350px){
+    [class*="col-"]{
+        float: left;
+    }
+    .col-3{
+        width: 25%;
+    }
+    .col-9{
+        width: 75%;
+    }
 }
