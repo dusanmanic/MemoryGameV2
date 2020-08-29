@@ -69,10 +69,10 @@ btnRadio.forEach(izaberiNivo => {
 
         document.getElementById("ime").className = "pointerEvent"
         
-        //shuffle(imgEasy)
-        //shuffle(imgMedium)
-        //shuffle(imgHard)
-        //shuffle(imgExpert)
+        shuffle(imgEasy)
+        shuffle(imgMedium)
+        shuffle(imgHard)
+        shuffle(imgExpert)
 
         if(izaberiNivo.checked) { 
             divCards.innerHTML = "";
